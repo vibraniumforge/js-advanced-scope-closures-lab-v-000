@@ -3,6 +3,7 @@ function produceDrivingRange(blockRange) {
     let startInt=parseInt(start, 10);
     let endInt=parseInt(end, 10);
     let travelDistance = Math.abs(startInt-endInt);
-    return blockRange > distance ? `within range by ${distance-blockRange}` : `${blockRange-distance} blocks out of range`;
+    let totalResult=Math.abs(blockRange-travelDistance)
+    return blockRange > travelDistance ? `within range by ${totalResult}` : `${totalResult} blocks out of range`;
   }
 }
