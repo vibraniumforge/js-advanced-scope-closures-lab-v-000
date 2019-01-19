@@ -1,5 +1,5 @@
-function produceDrivingRange(firstRange) {
-  return function isEnoughRange(secondRange) {
-    return firstRange > secondRange ? true : false;
+function produceDrivingRange(blockRange) {
+  return function isEnoughRange(start, end) {
+    return blockRange > Math.abs(start-end) ? true : false;
   }
 }
