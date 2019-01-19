@@ -7,3 +7,7 @@ function produceDrivingRange(blockRange) {
     return blockRange > travelDistance ? `within range by ${totalResult}` : `${totalResult} blocks out of range`;
   }
 }
+
+function produceTipCalculator() {
+
+}
